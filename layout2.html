@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <tittle>CSS TEMPLATE</tittle>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+            }
+            
+            h2 {
+                background-color: rgb(233, 233, 240);
+                padding: 30px;
+                text-align: center;
+            }
+            /* style the navigatio bar */
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(249, 59, 148);
+
+            }
+            /* style the topnav link */
+            .topnav a {
+                float: left;
+                display: block;
+                color: rgb(10, 14, 16);
+                text-align: center;
+                padding: 15px 114px;
+                text-decoration: none;
+
+            }
+            /* chage the color on hiver */
+            .topnav a:hover {
+                background-color: rgb(245, 239, 242);
+                color: black;
+            }
+            /* create three uequal colum that floats next to each other */
+            .colum {
+                float: left;
+                padding: 10px;
+
+            }
+            /* left and right colum */
+            .colum.side {
+                width: 20%;
+            }
+            /* middle colum */
+            .colum.middle {
+                width: 50%;
+            }
+            /*clear float after the colum */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+
+            }
+            /* style the footer */
+            .footer {
+                background-color: blueviolet;
+                padding: 30px;
+                text-align: center;
+            }
+
+            
+
+        </style>
+
+    </head>
+    <body>
+        <div class="HEADER">
+        <h2>HEADER</h2>
+        <div class="topnav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </div>
+        <div class="row">
+            <div class="colum side">
+                <h2>side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                
+            </div>
+            <div class="colum middle">
+                <h2>main content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Maecenas sit amet pretium urna.
+                      Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+                       Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                        eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p></p>
+
+            </div>
+                <div class="colum side ">
+                    <h2>side</h2>
+                    <p>ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                </div>
+                <div class="footer">
+                    <p>footer</p>
+                </div>
+        
+    </body>
+</html>
